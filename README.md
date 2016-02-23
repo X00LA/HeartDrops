@@ -11,4 +11,4 @@ You can easily configure the various variables in the config file.
 <a href="https://www.spigotmc.org/resources/heartdrops.18958/">Resource on SpigotMC</a><br>
 <a href="https://github.com/X00LA/HeartDrops/wiki">HeartDrops-WIKI</a>
 
-The Plugin is developed under the MIT-License.
+The Plugin is developed under the <a href="https://github.com/X00LA/HeartDrops/blob/master/LICENSE">MIT-License</a>.
