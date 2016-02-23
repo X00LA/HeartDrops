@@ -1,7 +1,7 @@
 # HeartDrops
 Minecraft-Bukkit-Spigot-Plugin that drop hearts from mobs which are healing the player
 
-This plugin depends on ProtocolLib.
+This plugin depends on <a href="https://www.spigotmc.org/resources/protocollib.1997/">ProtocolLib</a>.
 
 It's very leightweigt and tiny but powerful on every hardcore server and adds more fun for your players!
 
