@@ -1,0 +1,12 @@
+name: Heartdrops
+main: eu.xoola.HeartDrops.HeartDrops
+version: 1.5.1
+author: O_Shadow_O - X00LA
+depend: [ProtocolLib]
+commands:
+    heartdrops:
+      description: Heartdrops Main Command
+      usage: /heartdrops [args]
+      permission: heartdrops.admin
+
+

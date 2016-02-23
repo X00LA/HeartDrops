@@ -1,0 +1,24 @@
+material: 'REDSTONE'
+doubleHealChance: 0.2
+particleTime: 15
+pickupsound: 'LEVEL_UP'
+pickupvolume: 0.5
+pickuppitch: 0
+healAmount: 1
+entities:
+  - 'ENDERMAN : 0.2 : 0 : 1 : 1'
+  - 'CREEPER : 0.2 : 0 : 1 : 1'
+  - 'ZOMBIE : 0.2 : 0 : 1 : 1'
+  - 'PIG_ZOMBIE : 0.2 : 0 : 1 : 1'
+  - 'SKELETON : 0.2 : 0 : 1 : 1'
+  - 'GHAST : 0.2 : 0 : 1 : 1'
+  - 'SPIDER : 0.2 : 0 : 1 : 1'
+  - 'CAVE_SPIDER : 0.2 : 0 : 1 : 1'
+  - 'SLIME : 0.2 : 0 : 1 : 1'
+  - 'BLAZE : 0.2 : 0 : 1 : 1'
+  - 'MAGMA_CUBE : 0.2 : 0 : 1 : 1'
+  - 'WITCH : 0.2 : 0 : 1 : 1'
+  - 'ENDERMITE : 0.2 : 0 : 1 : 1'
+  - 'ENDER_DRAGON : 0.2 : 0 : 1 : 1'
+  - 'WITHER : 0.2 : 0 : 1 : 1'
+  - 'SILVERFISH : 0.2 : 0 : 1 : 1'
