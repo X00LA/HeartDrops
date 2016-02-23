@@ -8,7 +8,7 @@ It's very leightweigt and tiny but powerful on every hardcore server and adds mo
 When you kill mobs, the plugin gives you a random amount of hearts that heals you.
 You can easily configure the various variables in the config file.
 
-<a href="https://www.spigotmc.org/resources/heartdrops.18958/">Resource on SpigotMC</a>
+<a href="https://www.spigotmc.org/resources/heartdrops.18958/">Resource on SpigotMC</a><br>
 <a href="https://github.com/X00LA/HeartDrops/wiki">HeartDrops-WIKI</a>
 
 The Plugin is developed under the MIT-License.
