@@ -5,7 +5,7 @@
  
  public class DropTask implements Runnable
  {
-   public ArrayList<Item> droppedItems;
+   private ArrayList<Item> droppedItems;
    
    public DropTask()
    {
@@ -22,7 +22,16 @@
      this.droppedItems.remove(item);
    }
    
- 
+   public ArrayList<Item> getDroppedItems()
+   {
+	   return this.droppedItems;
+   }
+   
+   public void clearItems()
+   {
+	   this.droppedItems.clear();
+   }
+   
    public void run()
    {
      Item item = null;
