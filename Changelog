@@ -15,3 +15,11 @@ Changelog
     Updated the Wiki to correspond with the new update.
 
 ***
+    Update-1.5.3 / 01.03.2016
+    Plugin changes:
+    Replaced pickup sound definition in config from LEVEL_UP to ENTITY_PLAYER_LEVELUP to get confirm with Spigot-1.9.
+
+    Wiki-Update
+    Updated WIKI with the new sound definitions
+
+***
