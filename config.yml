@@ -11,7 +11,7 @@ particleTime: 15
 # The sound of an item pickup.
 # You can use different sound.
 # For a list of available sounds look here: https://github.com/X00LA/HeartDrops/wiki/Config
-pickupsound: 'LEVEL_UP'
+pickupsound: 'ENTITY_PLAYER_LEVELUP'
 # The volume of the pickup sound.
 # Increase or decrease the volume as your want.
 pickupvolume: 0.5
@@ -62,7 +62,3 @@ entities:
 # - 'SQUID : 0.2 : 0 : 1 : 1'
 # - 'VILLAGER : 0.2 : 0 : 1 : 1'
 # - 'WOLF : 0.2 : 0 : 1 : 1'
-
---
-libgit2 0.22.2
-
