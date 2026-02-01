@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-   <a alt="Supports Minecraft 1.21.11" title="Go to Minecraft's Server download site" href="https://www.minecraft.net/en-us/download/server" > <img alt="Supported Minecraft Version" src="https://img.shields.io/badge/Minecraft-1.21.x-69986a
-" /></a>
+   <a alt="Supports Minecraft 1.21.x" title="Go to Minecraft's Server download site" href="https://www.minecraft.net/en-us/download/server" > <img alt="Supported Minecraft Version" src="https://img.shields.io/badge/Minecraft-1.21.x-69986a" /></a>
     <img alt="GitHub Release (latest)" src="https://img.shields.io/github/v/release/X00LA/HeartDrops">
     <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/HeartDrops/total" />
     <img alt="GitHub Downloads (latest)" src="https://img.shields.io/github/downloads/X00LA/HeartDrops/latest/total">
