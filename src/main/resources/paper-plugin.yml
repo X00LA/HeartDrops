@@ -1,0 +1,26 @@
+name: 'HeartDrops'
+version: '2.0.1-SNAPSHOT'
+main: at.xoola.heartdrops.HeartDrops
+api-version: '1.21'
+folia-supported: true
+authors: [ X00LA ]
+description: "When you kill mobs, the plugin gives you a random amount of hearts that heals you."
+load: POSTWORLD
+
+dependencies:
+  server:
+    ProtocolLib:
+      required: false
+      load: BEFORE
+      join-classpath: true
+
+permissions:
+  heartdrops.admin:
+    description: "Admin permission for heartdrops."
+    default: op
+  heartdrops.pickup:
+    description: "Players with this permission are allowed to pickup hearts."
+    default: true
+  heartdrops.command.help:
+    description: "Players with this permission can use the help command for heartdrops."
+    default: op
