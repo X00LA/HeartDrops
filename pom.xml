@@ -6,7 +6,7 @@
 
     <groupId>at.xoola</groupId>
     <artifactId>heartdrops</artifactId>
-    <version>v2.0.1-SNAPSHOT</version>
+    <version>v2.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>heartdrops</name>
