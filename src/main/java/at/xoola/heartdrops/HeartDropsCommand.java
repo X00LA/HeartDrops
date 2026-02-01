@@ -11,17 +11,17 @@ public class HeartDropsCommand extends BukkitCommand {
         super("heartdrops");
         this.plugin = plugin;
         this.setDescription("HeartDrops commands");
-        this.setPermission("heartdrops.admin");
+        this.setPermission("heartdrops.command.reload");
     }
 
     @Override
     public boolean execute(@NotNull CommandSender sender, @NotNull String label, String[] args) {
         if (args.length > 0 && args[0].equalsIgnoreCase("reload")) {
             plugin.loadConfig();
-            sender.sendMessage("HeartDrops config reloaded!");
+            sender.sendMessage("§aHeartDrops config reloaded!");
             return true;
         }
-        sender.sendMessage("HeartDrops command usage: /heartdrops reload");
+        sender.sendMessage("§eHeartDrops command usage: /heartdrops reload");
         return true;
     }
 }
