@@ -6,7 +6,7 @@
 
     <groupId>at.xoola</groupId>
     <artifactId>heartdrops</artifactId>
-    <version>v2.0.2-SNAPSHOT</version>
+    <version>v2.1.3-ALPHA</version>
     <packaging>jar</packaging>
 
     <name>heartdrops</name>
@@ -14,20 +14,42 @@
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+                      <kotlin.version>2.2.0</kotlin.version>
+                           <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
+         </properties>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
+                              <plugin>
+                           <groupId>org.apache.maven.plugins</groupId>
+                           <artifactId>maven-compiler-plugin</artifactId>
+                           <version>3.14.0</version>
+                           <executions>
+                                    <execution>
+                                             <id>default-compile</id>
+                                             <goals><goal>compile</goal></goals>
+                                             <configuration><skipMain>true</skipMain></configuration>
+                                    </execution>
+                                    <execution>
+                                             <id>compile-java</id>
+                                             <phase>compile</phase>
+                                             <goals><goal>compile</goal></goals>
+                                             <configuration><release>${java.version}</release></configuration>
+                                    </execution>
+                                    <execution>
+                                             <id>default-testCompile</id>
+                                             <goals><goal>testCompile</goal></goals>
+                                             <configuration><skip>true</skip></configuration>
+                                    </execution>
+                                    <execution>
+                                             <id>test-compile-java</id>
+                                             <phase>test-compile</phase>
+                                             <goals><goal>testCompile</goal></goals>
+                                             <configuration><release>${java.version}</release></configuration>
+                                    </execution>
+                           </executions>
+                  </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -53,7 +75,62 @@
                     </archive>
                 </configuration>
             </plugin>
-        </plugins>
+                          <plugin>
+                           <groupId>org.jetbrains.kotlin</groupId>
+                           <artifactId>kotlin-maven-plugin</artifactId>
+                           <version>${kotlin.version}</version>
+                           <configuration>
+                                    <jvmTarget>${kotlin.compiler.jvmTarget}</jvmTarget>
+                                    <sourceDirs>
+                                             <source>src/main/java</source>
+                                             <source>src/main/kotlin</source>
+                                    </sourceDirs>
+                                    <testSourceDirs>
+                                             <source>src/test/java</source>
+                                             <source>src/test/kotlin</source>
+                                    </testSourceDirs>
+                                    <compilerPlugins>
+                                             <plugin>spring</plugin>
+                                             <plugin>all-open</plugin>
+                                             <plugin>jpa</plugin>
+                                    </compilerPlugins>
+                           </configuration>
+                           <executions>
+                                    <execution>
+                                             <id>compile-kotlin</id>
+                                             <phase>compile</phase>
+                                             <goals><goal>compile</goal></goals>
+                                             <configuration>
+                                                      <args>
+                                                               <arg>-Xjava-source-roots=${project.basedir}/src/main/java</arg>
+                                                      </args>
+                                             </configuration>
+                                    </execution>
+                                    <execution>
+                                             <id>test-compile-kotlin</id>
+                                             <phase>test-compile</phase>
+                                             <goals><goal>test-compile</goal></goals>
+                                             <configuration>
+                                                      <args>
+                                                               <arg>-Xjava-source-roots=${project.basedir}/src/test/java</arg>
+                                                      </args>
+                                             </configuration>
+                                    </execution>
+                           </executions>
+                           <dependencies>
+                                    <dependency>
+                                             <groupId>org.jetbrains.kotlin</groupId>
+                                             <artifactId>kotlin-maven-allopen</artifactId>
+                                             <version>${kotlin.version}</version>
+                                    </dependency>
+                                    <dependency>
+                                             <groupId>org.jetbrains.kotlin</groupId>
+                                             <artifactId>kotlin-maven-noarg</artifactId>
+                                             <version>${kotlin.version}</version>
+                                    </dependency>
+                           </dependencies>
+                  </plugin>
+                  </plugins>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -106,5 +183,10 @@
             <version>5.3.0</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
+                      <dependency>
+                           <groupId>org.jetbrains.kotlin</groupId>
+                           <artifactId>kotlin-stdlib</artifactId>
+                           <version>${kotlin.version}</version>
+                  </dependency>
+         </dependencies>
 </project>

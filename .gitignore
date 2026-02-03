@@ -92,3 +92,6 @@ plugins/*.jar
 # Keep README and license tracked
 !README.md
 !LICENSE
+
+# Ignore copilot settings
+.github/copilot/
